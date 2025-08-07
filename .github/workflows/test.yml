@@ -1,0 +1,27 @@
+# Test
+
+name: Test
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  test-node-range:
+
+    runs-on: windows-latest
+
+    env:
+      NODE_RANGE: 14
+      PLATFORM: linux
+      ARCH: x64
+
+    steps:
+      - name: check env 1
+        run: |
+          echo node$NODE_RANGE-$PLATFORM-$ARCH
+        shell: bash
+      - name: check env 2
+        run: |
+          echo node${{ env.NODE_RANGE }}-${{ env.PLATFORM }}-${{ env.ARCH }}
+        shell: bash
