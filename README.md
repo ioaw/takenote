@@ -14,7 +14,7 @@
    
 </p>
 
-<p align="center">A web-based notes app for developers. (Demo only)</p>
+<p align="center">A web-based notes app for developers. (Demo only#)</p>
 
 ![Screenshot](./assets/takenote-light.png)
 
