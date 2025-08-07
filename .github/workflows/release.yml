@@ -101,7 +101,7 @@ jobs:
           path: build_assets/${{ env.ARTIFACT_NAME }}
 
       - name: Upload binary files to GitHub release
-        uses: svenstaro/upload-release-action@v4
+        uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file_glob: true
