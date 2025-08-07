@@ -95,13 +95,13 @@ jobs:
         shell: bash
 
       - name: Upload binary files to Artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ env.ASSET_NAME }}
           path: build_assets/${{ env.ARTIFACT_NAME }}
 
       - name: Upload binary files to GitHub release
-        uses: svenstaro/upload-release-action@v2
+        uses: svenstaro/upload-release-action@v4
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file_glob: true
