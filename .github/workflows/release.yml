@@ -28,7 +28,7 @@ jobs:
 
     env:
       APP: takenote
-      NODE_RANGE: node14
+      NODE_RANGE: node18
       PLATFORM: ${{ matrix.platform }}
       ARCH: ${{ matrix.arch }}
 
@@ -66,9 +66,9 @@ jobs:
         shell: bash
 
       - name: Use Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
-          node-version: '14.x'
+          node-version: '18.x'
 
       - name: Install dependencies
         run: npm install
